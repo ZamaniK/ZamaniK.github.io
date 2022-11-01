@@ -1,0 +1,104 @@
+
+            .navbar-default {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                background-color: white;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            .center-div {
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -150px;
+                margin-top: -150px;
+            }
+
+            .spinner {
+                position: fixed;
+                z-index: 999;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: Black;
+                filter: alpha(opacity=60);
+                opacity: 0.6;
+                -moz-opacity: 0.8;
+            }
+
+            .loader {
+                margin: auto;
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #15a0ec;
+                border-bottom: 16px solid #15a0ec;
+                width: 120px;
+                height: 120px;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 2s linear infinite;
+            }
+
+            .inner-div {
+                background-color: white;
+                border-radius: 15px;
+                margin: auto;
+                padding: 2%;
+                width: 150px;
+            }
+
+            @@-webkit-keyframes spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: rotate(360deg);
+                }
+            }
+
+            @@keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            * The container <div > - needed to position the dropdown content */
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            /* Dropdown Content (Hidden by Default) */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+                /* Links inside the dropdown */
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                    /* Change color of dropdown links on hover */
+                    .dropdown-content a:hover {
+                        background-color: #ddd;
+                    }
+
+            /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+            .show {
+                display: block;
+            }
