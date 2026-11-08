@@ -1,0 +1,14 @@
+.git
+.github
+node_modules
+dist
+*.log
+
+# Vite only needs source assets and the curated public/ directory.
+img
+css
+js
+lib
+mail
+stylesheet.css
+20220909_082629.jpg
